@@ -19,6 +19,9 @@ public class PedidoService {
  
         mailService.enviar(pedido.getCorreo(), asunto, cuerpo);
         mailService = null;
+
+        mailService.enviar(pedido.getCorreo(), asunto, cuerpo);
+        mailService = null;
     }
  
 }
