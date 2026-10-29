@@ -11,8 +11,7 @@ public class Main implements QuarkusApplication{
     @Inject
     private PedidoService pedidoService;
 
-    @Inject 
-    private CompraService compraService;
+
  
     public static void main(String[] args) {
         Quarkus.run(Main.class, args);
@@ -24,27 +23,10 @@ public class Main implements QuarkusApplication{
  
         Pedido pedido =  new Pedido("Juan Peres", "laptop",150, "juansdsd" );
         pedido.setTelefono("0999999999");
-        this.pedidoService.realizar(pedido);
+        this.pedidoService.realizar(pedido, null);
 
         Compra compra = new Compra("Esteban", "celular", 20, "ddddd");
         compra.setTelefono("09999999");
-        this.compraService.realizar(compra);
-
- 
- 
-        //El ambito: es el tiempo de vida de los componentes
-        //el conexto: es la situacion en la que se encuentra el componente
-
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  
  

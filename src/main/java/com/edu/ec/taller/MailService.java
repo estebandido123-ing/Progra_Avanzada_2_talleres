@@ -1,16 +1,10 @@
 package com.edu.ec.taller;
 
- 
-import io.quarkus.arc.Unremovable;
-import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.context.Dependent;
-import jakarta.enterprise.context.RequestScoped;
+
 import jakarta.inject.Named;
-import jakarta.inject.Singleton;
- 
-//@ApplicationScoped
-//@RequestScoped
-//Singleton
+
+
 @Dependent 
 @Named ("mail")  
 
