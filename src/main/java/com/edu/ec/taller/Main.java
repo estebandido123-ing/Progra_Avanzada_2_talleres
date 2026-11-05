@@ -28,7 +28,7 @@ public class Main implements QuarkusApplication{
         Compra compra = new Compra("Esteban", "celular", 20, "ddddd");
         compra.setTelefono("09999999");
  
- 
+        
  
  
         return 0;

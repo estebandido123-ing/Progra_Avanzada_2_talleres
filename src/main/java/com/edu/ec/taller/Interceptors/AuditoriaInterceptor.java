@@ -5,6 +5,7 @@ import java.lang.reflect.Parameter;
 import com.edu.ec.taller.AuditoriaService;
 import com.edu.ec.taller.Pedido;
 
+import jakarta.annotation.Priority;
 import jakarta.inject.Inject;
 import jakarta.interceptor.AroundInvoke;
 import jakarta.interceptor.Interceptor;
@@ -12,6 +13,7 @@ import jakarta.interceptor.InvocationContext;
 
 @Auditoria 
 @Interceptor 
+@Priority(Interceptor.Priority.APPLICATION + 2)
 public class AuditoriaInterceptor {
 
     @Inject 
@@ -19,8 +21,11 @@ public class AuditoriaInterceptor {
 
     @AroundInvoke 
     public Object interceptar(InvocationContext context) throws Exception {
+        long init= System.currentTimeMillis();
         System.out.println("Interceptando el metodo: " + context.getMethod().getName());
         System.out.println("Ejecuto todo lo que quiero que haga el interceptor antes de ejecutar el metodo");
+        long end = System.currentTimeMillis();
+        System.out.println("Tiempo de ejecución auditoria: " + (end - init) + " ms");
         
         Parameter[] parametros = context.getMethod().getParameters(); 
         
