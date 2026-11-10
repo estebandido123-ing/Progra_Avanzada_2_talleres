@@ -1,7 +1,7 @@
 package com.edu.ec.taller;
 
 import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.ws.rs.ApplicationPath;
+
 
 @ApplicationScoped
 public class AuditoriaService {
