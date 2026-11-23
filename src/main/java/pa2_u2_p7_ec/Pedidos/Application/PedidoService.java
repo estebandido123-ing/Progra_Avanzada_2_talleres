@@ -1,12 +1,10 @@
 package pa2_u2_p7_ec.Pedidos.Application;
 
-import java.util.stream.Gatherer.Integrator;
-
-import ec.edu.uce.pa.grupo.u2.pedidos.domain.model.Pedido;
-import ec.edu.uce.pa.grupo.u2.pedidos.domain.repository.PedidoRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
+import pa2_u2_p7_ec.Pedidos.Domain.Model.Pedido;
+import pa2_u2_p7_ec.Pedidos.Domain.Repository.PedidoRepository;
 
 @ApplicationScoped 
 @Transactional 

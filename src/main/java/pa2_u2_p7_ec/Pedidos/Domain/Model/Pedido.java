@@ -57,6 +57,16 @@ public class Pedido {
     public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
     }
-
+    /* 
+    public Pedido(Integer id, String producto, Double precio, LocalDateTime fecha) {
+        this.id = id;
+        this.producto = producto;
+        this.precio = precio;
+        this.fecha = fecha;
+    }*/
+    @Override
+    public String toString() {
+        return "Pedido [id=" + id + ", producto=" + producto + ", precio=" + precio + ", fecha=" + fecha + "]";
+    }
 
 }

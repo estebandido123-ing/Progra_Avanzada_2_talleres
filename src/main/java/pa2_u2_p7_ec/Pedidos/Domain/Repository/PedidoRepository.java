@@ -1,7 +1,6 @@
 package pa2_u2_p7_ec.Pedidos.Domain.Repository;
 
-
-import ec.edu.uce.pa.grupo.u2.pedidos.domain.model.Pedido;
+import pa2_u2_p7_ec.Pedidos.Domain.Model.Pedido;
 
 public interface PedidoRepository {
     
