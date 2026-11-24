@@ -18,7 +18,7 @@ public class PedidoRepositoryImpl implements PedidoRepository {
     }
 
     @Override
-    public Pedido read(Integer id) {
+    public  Pedido read(Integer id) {
        return this.entityManager.find(Pedido.class, id);
     }
 
@@ -32,5 +32,6 @@ public class PedidoRepositoryImpl implements PedidoRepository {
         Pedido pedido = this.read(id);
         this.entityManager.remove(pedido);
     }
+    
 
 }

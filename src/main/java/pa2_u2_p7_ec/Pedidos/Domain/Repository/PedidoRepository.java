@@ -1,5 +1,7 @@
 package pa2_u2_p7_ec.Pedidos.Domain.Repository;
 
+import java.util.Optional;
+
 import pa2_u2_p7_ec.Pedidos.Domain.Model.Pedido;
 
 public interface PedidoRepository {
