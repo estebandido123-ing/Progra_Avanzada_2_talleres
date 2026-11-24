@@ -1,5 +1,7 @@
 package pa2_u2_p7_ec.Pedidos.Application;
 
+import java.util.Optional;
+
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
@@ -27,6 +29,10 @@ public class PedidoService {
 
     public void  eliminar(Integer id){
         this.pr.delete(id);
+    }
+
+    public Optional<Pedido> buscarPorNumero(String id){
+        return Optional.empty();
     }
 
 }
